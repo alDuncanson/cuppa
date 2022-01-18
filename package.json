@@ -1,5 +1,5 @@
 {
-	"name": "stand-up",
+	"name": "remindful",
 	"displayName": "Stand Up",
 	"description": "It's time to stand up!",
 	"version": "0.0.1",
@@ -16,7 +16,7 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "stand-up.helloWorld",
+				"command": "remindful.helloWorld",
 				"title": "Hello World"
 			}
 		]
