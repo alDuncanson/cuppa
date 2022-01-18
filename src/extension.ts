@@ -1,12 +1,14 @@
 import * as vscode from 'vscode';
 
+const INITIAL_TIME = 1800000;
+
 let statusBarItem: vscode.StatusBarItem;
 let timerValue: number;
 let timesUp: boolean;
 
 export function activate({ subscriptions }: vscode.ExtensionContext) {
 
-	timerValue = 15000; // countdown timer value in milliseconds
+	timerValue = INITIAL_TIME; // countdown timer value in milliseconds
 	timesUp = false; // flag to indicate if the timer has run out
 
 	// register a command that is invoked when the status bar
@@ -43,8 +45,13 @@ function updateTimer(): void {
 
 	if (timerValue > 0) {
 		timerValue -= 1000;
+
+		if (timerValue < 10000) {
+			statusBarItem.backgroundColor = new vscode.ThemeColor('statusBarItem.warningBackground');
+		}
 	} else {
 		if (timesUp === false) {
+			statusBarItem.backgroundColor = new vscode.ThemeColor('statusBarItem.errorBackground');
 			timesUp = true;
 			showMessage();
 		}
@@ -52,15 +59,19 @@ function updateTimer(): void {
 }
 
 /**
- * Formats the time in milliseconds to a string in the format mm:ss.
+ * Formats the time in milliseconds to a string in the format hh:mm:ss.
  * 
  * @param time Time in milliseconds.
  * @returns Formatted time string.
  */
 function formattedTime(time: number): string {
+	const hours = Math.floor(time / 3600000);
 	const minutes = Math.floor(time / 60000);
 	const seconds = Math.floor((time % 60000) / 1000);
-	return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+	const formattedHours = hours < 10 ? `0${hours}` : hours;
+	const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
+	const formattedSeconds = seconds < 10 ? `0${seconds}` : seconds;
+	return `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
 }
 
 /**
@@ -69,7 +80,7 @@ function formattedTime(time: number): string {
  * @param time Time in milliseconds.
  */
 function updateStatus(time: number): void {
-	statusBarItem.text = `Time: ${formattedTime(time)}`;
+	statusBarItem.text = `Remindful: ${formattedTime(time)}`;
 }
 
 /**
@@ -83,6 +94,7 @@ function showMessage(): void {
  * Resets the timer to the default value.
  */
 function resetTimer(): void {
-	timerValue = 15000;
+	timerValue = INITIAL_TIME;
 	timesUp = false;
+	statusBarItem.backgroundColor = undefined;
 }
