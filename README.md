@@ -1,8 +1,8 @@
-# Stand Up
+# cuppa
 
-> a friendly reminder to stand up every once in a while
+> TODO
 
-<!-- TODO add shields.io herer -->
+<!-- TODO add shields.io here -->
 
 ---
 

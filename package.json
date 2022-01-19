@@ -1,7 +1,7 @@
 {
-	"name": "remindful",
-	"displayName": "Stand Up",
-	"description": "It's time to stand up!",
+	"name": "cuppa",
+	"displayName": "cuppa",
+	"description": "",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.63.0"
@@ -16,10 +16,25 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "remindful.helloWorld",
+				"command": "cuppa.helloWorld",
 				"title": "Hello World"
 			}
-		]
+		],
+		"configuration": {
+			"title": "cuppa",
+			"properties": {
+				"cuppa.reminderTime": {
+					"type": "number",
+					"default": 30,
+					"description": "How long before your reminder should be shown (in minutes)"
+				},
+				"cuppa.reminderMessage": {
+					"type": "string",
+					"default": "Time for a cuppa!",
+					"description": "The reminder message to display"
+				}
+			}
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run package",
