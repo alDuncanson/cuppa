@@ -10,14 +10,15 @@
 		"Other"
 	],
 	"activationEvents": [
-		"*"
+		"*",
+		"onCommand:cuppa.resetCuppa"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "cuppa.helloWorld",
-				"title": "Hello World"
+				"command": "cuppa.resetCuppa",
+				"title": "Reset Cuppa"
 			}
 		],
 		"configuration": {

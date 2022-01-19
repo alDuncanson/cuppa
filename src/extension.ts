@@ -29,7 +29,7 @@ export function activate({ subscriptions }: vscode.ExtensionContext): void {
 	timesUp = false; // flag to indicate if the timer has run out
 
 	// register a command that is invoked when the status bar item is selected
-	const myCommandId = 'cuppa.showCountdownTime';
+	const myCommandId = 'cuppa.resetCuppa';
 	subscriptions.push(vscode.commands.registerCommand(myCommandId, () => {
 		// do something when status bar item is clicked
 		resetTimer();
@@ -38,7 +38,7 @@ export function activate({ subscriptions }: vscode.ExtensionContext): void {
 	// create a new status bar item
 	statusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left, 0);
 	statusBarItem.command = myCommandId;
-	statusBarItem.tooltip = 'Click to reset timer';
+	statusBarItem.tooltip = 'Click to reset cuppa';
 	subscriptions.push(statusBarItem);
 
 	// show timer in status bar
