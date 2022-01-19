@@ -18,7 +18,8 @@
 		"commands": [
 			{
 				"command": "cuppa.resetCuppa",
-				"title": "Reset Cuppa"
+				"category": "cuppa",
+				"title": "reset"
 			}
 		],
 		"configuration": {
