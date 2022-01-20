@@ -1,13 +1,6 @@
 <div id="top"></div>
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 <!-- TODO -->
 <!-- [![Contributors][contributors-shield]][contributors-url]
@@ -17,14 +10,14 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url] -->
 
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/alDuncanson/cuppa">
+	<!-- TODO -->
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
   <p align="center">
-    TODO tagline
+    friendly reminders in your editor
     <br />
     <br />
     <a href="https://github.com/alDuncanson/cuppa/issues">Report Bug</a>
@@ -33,13 +26,17 @@
   </p>
 </div>
 
-<!-- TABLE OF CONTENTS TODO -->
+## About
+
+TODO
+
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#about-the-project">About</a></li>
 		<li><a href="#installation">Installation</a></li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#usage">Configuration</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -47,10 +44,6 @@
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
-
-## About The Project
-
-<!-- TODO -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -64,7 +57,7 @@ Visit [cuppa](https://marketplace.visualstudio.com/items?itemName=AlDuncanson.cu
 
 #### VS Code
 
-Type ⌘P (or Ctrl+P) to open **Quick Open** and paste the following:
+Type`⌘P` (`⌃P` on Windows) to open **Quick Open** and paste the following:
 
 ```
 ext install AlDuncanson.cuppa
@@ -74,7 +67,35 @@ ext install AlDuncanson.cuppa
 
 ## Usage
 
-<!-- TODO -->
+cuppa starts automatically when you open a workspace
+
+![cuppa](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/status_bar/cuppa.gif?token=GHSAT0AAAAAABQCHKDL4HYQHWGY7EWV5QEGYPI5RTA)
+
+when it's almost time (10 seconds left), cuppa will turn yellow to get your attention
+
+![almost time](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/status_bar/almost_time.gif?token=GHSAT0AAAAAABQCHKDLNQICHNSVXMIYV7ZEYPI5OCA)
+
+when the time is up, you'll receive a notification in the bottom right
+
+![time for a cuppa](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/notifications/time_for_a_cuppa.gif?token=GHSAT0AAAAAABQCHKDLUHIF2MC2N5QLREIWYPI5SBQ)
+
+just click to reset cuppa!
+
+> Note: you can click to reset cuppa at any time
+
+![click to reset](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/status_bar/reset_cuppa.gif?token=GHSAT0AAAAAABQCHKDLKMM2EHJLEI2H4TIYYPI5SMA)
+
+## Configuration
+
+cuppa is configurable!
+
+You can edit cuppa's time and message with the following configuration keys in your `User/settings.json` file
+
+![configuration](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/settings/json.png?token=GHSAT0AAAAAABQCHKDKN7EOMPMSI2WKC4E6YPI5SXA)
+
+Or type `⌘⇧P` (`⌃⇧P` on Windows) to open **Command Palette** and type `Preferences: Open Settings (UI)`, then search for `cuppa`
+
+![settings ui](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/settings/ui.png?token=GHSAT0AAAAAABQCHKDK4SBLQBDXH7ZYQL4KYPI5S7Q)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -85,7 +106,7 @@ ext install AlDuncanson.cuppa
   - custom reminder message
 - [x] command palette commands
   - reset cuppa reminder
-- [ ] side bar view
+- [ ] custom side bar panel
 
 See the [open issues](https://github.com/alDuncanson/cuppa/issues) for a full list of proposed features (and known issues).
 
@@ -93,11 +114,12 @@ See the [open issues](https://github.com/alDuncanson/cuppa/issues) for a full li
 
 ## Contributing
 
-Any contributions you make are **greatly appreciated**.
+Contributions are **greatly appreciated**.
 
-#### Code
+If you have a suggestion that would make cuppa better, you can open an issue with the tag "enhancement".
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Or feel free to fork the project and open a pull request with your suggested changes.
+
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
@@ -105,10 +127,6 @@ Don't forget to give the project a star! Thanks again!
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-#### Coffee
-
-<a href='https://www.buymeacoffee.com/alduncanson' target='_blank'><img src='https://cdn.buymeacoffee.com/buttons/default-orange.png' alt='Buy Me A Coffee' height='34' width='144'></a>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -124,6 +142,8 @@ Al Duncanson
 
 - [@al_duncanson](https://twitter.com/al_duncanson)
 - alexjduncanson@gmail.com
+
+<a href='https://www.buymeacoffee.com/alduncanson' target='_blank'><img src='https://cdn.buymeacoffee.com/buttons/default-orange.png' alt='Buy Me A Coffee' height='34' width='144'></a>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
