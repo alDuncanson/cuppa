@@ -69,21 +69,21 @@ ext install AlDuncanson.cuppa
 
 cuppa starts automatically when you open a workspace
 
-![cuppa](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/status_bar/cuppa.gif?token=GHSAT0AAAAAABQCHKDL4HYQHWGY7EWV5QEGYPI5RTA)
+![cuppa](images/status_bar/cuppa.gif)
 
 when it's almost time (10 seconds left), cuppa will turn yellow to get your attention
 
-![almost time](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/status_bar/almost_time.gif?token=GHSAT0AAAAAABQCHKDLNQICHNSVXMIYV7ZEYPI5OCA)
+![almost time](images/status_bar/almost_time.gif)
 
 when the time is up, you'll receive a notification in the bottom right
 
-![time for a cuppa](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/notifications/time_for_a_cuppa.gif?token=GHSAT0AAAAAABQCHKDLUHIF2MC2N5QLREIWYPI5SBQ)
+![time for a cuppa](images/notifications/time_for_a_cuppa.gif)
 
 just click to reset cuppa!
 
 > Note: you can click to reset cuppa at any time
 
-![click to reset](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/status_bar/reset_cuppa.gif?token=GHSAT0AAAAAABQCHKDLKMM2EHJLEI2H4TIYYPI5SMA)
+![click to reset](images/status_bar/reset_cuppa.gif)
 
 ## Configuration
 
@@ -91,11 +91,11 @@ cuppa is configurable!
 
 You can edit cuppa's time and message with the following configuration keys in your `User/settings.json` file
 
-![configuration](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/settings/json.png?token=GHSAT0AAAAAABQCHKDKN7EOMPMSI2WKC4E6YPI5SXA)
+![configuration](images/settings/json.png)
 
 Or type `⌘⇧P` (`⌃⇧P` on Windows) to open **Command Palette** and type `Preferences: Open Settings (UI)`, then search for `cuppa`
 
-![settings ui](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/settings/ui.png?token=GHSAT0AAAAAABQCHKDK4SBLQBDXH7ZYQL4KYPI5S7Q)
+![settings ui](images/settings/ui.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
