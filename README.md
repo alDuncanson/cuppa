@@ -1,26 +1,18 @@
 <div id="top"></div>
 
+<!-- TODO shields -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
-<!-- TODO -->
-<!-- [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 <br />
 <div align="center">
   <a href="https://github.com/alDuncanson/cuppa">
-	<!-- TODO -->
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo/cuppa_logo_full.png" alt="Logo" height="144">
   </a>
   <p align="center">
-    friendly reminders in your editor
+    oh look at that, it's time for a cuppa!
     <br />
     <br />
-    <a href="https://github.com/alDuncanson/cuppa/issues">Report Bug</a>
+    <a href="https://github.com/alDuncanson/cuppa/issues">Report a Bug</a>
     ·
     <a href="https://github.com/alDuncanson/cuppa/issues">Request Feature</a>
   </p>
@@ -28,15 +20,17 @@
 
 ## About
 
-TODO
+It's easy to spend hours programming, and forget to take a break.
+
+Cuppa is here to remind you!
 
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#about-the-project">About</a></li>
+    <li><a href="#about">About</a></li>
 		<li><a href="#installation">Installation</a></li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#usage">Configuration</a></li>
+    <li><a href="#configuration">Configuration</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -84,6 +78,8 @@ just click to reset cuppa!
 > Note: you can click to reset cuppa at any time
 
 ![click to reset](images/status_bar/reset_cuppa.gif)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Configuration
 
