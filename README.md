@@ -6,16 +6,28 @@
 <br />
 <div align="center">
   <a href="https://github.com/alDuncanson/cuppa">
-    <img src="images/logo/cuppa_logo_full.png" alt="Logo" height="144">
+    <img src="https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/logo/cuppa_logo_full.png" alt="Logo" height="144">
   </a>
   <p align="center">
-    oh look at that, it's time for a cuppa!
+    Oh look at that, it's time for a cuppa!
     <br />
     <br />
     <a href="https://github.com/alDuncanson/cuppa/issues">Report a Bug</a>
     ·
     <a href="https://github.com/alDuncanson/cuppa/issues">Request Feature</a>
   </p>
+</div>
+
+<div align="center">
+	<a href="https://github.com/alDuncanson/cuppa">
+    <img src="https://img.shields.io/github/stars/alDuncanson/cuppa">
+  </a>
+	<a href="https://github.com/sponsors/alDuncanson">
+		<img src="https://img.shields.io/github/sponsors/alDuncanson">
+	</a>
+	<a href="https://marketplace.visualstudio.com/items?itemName=AlDuncanson.cuppa">
+		<img src="https://img.shields.io/visual-studio-marketplace/i/AlDuncanson.cuppa">
+	</a>
 </div>
 
 ## About
@@ -63,21 +75,21 @@ ext install AlDuncanson.cuppa
 
 cuppa starts automatically when you open a workspace
 
-![cuppa](images/status_bar/cuppa.gif)
+![cuppa](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/status_bar/cuppa.gif)
 
 when it's almost time (10 seconds left), cuppa will turn yellow to get your attention
 
-![almost time](images/status_bar/almost_time.gif)
+![almost time](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/status_bar/almost_time.gif)
 
 when the time is up, you'll receive a notification in the bottom right
 
-![time for a cuppa](images/notifications/time_for_a_cuppa.gif)
+![time for a cuppa](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/notifications/time_for_a_cuppa.gif)
 
 just click to reset cuppa!
 
 > Note: you can click to reset cuppa at any time
 
-![click to reset](images/status_bar/reset_cuppa.gif)
+![click to reset](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/status_bar/reset_cuppa.gif)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -87,11 +99,11 @@ cuppa is configurable!
 
 You can edit cuppa's time and message with the following configuration keys in your `User/settings.json` file
 
-![configuration](images/settings/json.png)
+![configuration](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/settings/json.png)
 
 Or type `⌘⇧P` (`⌃⇧P` on Windows) to open **Command Palette** and type `Preferences: Open Settings (UI)`, then search for `cuppa`
 
-![settings ui](images/settings/ui.png)
+![settings ui](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/settings/ui.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -103,6 +115,7 @@ Or type `⌘⇧P` (`⌃⇧P` on Windows) to open **Command Palette** and type `P
 - [x] command palette commands
   - reset cuppa reminder
 - [ ] custom side bar panel
+- [ ] setup Github discussions
 
 See the [open issues](https://github.com/alDuncanson/cuppa/issues) for a full list of proposed features (and known issues).
 
@@ -149,6 +162,3 @@ Al Duncanson
 - [Project badges](https://shields.io)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-[stars-shield]: https://img.shields.io/github/stars/alDuncanson/cuppa.svg?style=for-the-badge
-[stars-url]: https://github.com/alDuncanson/cuppa/stargazers

@@ -1,18 +1,26 @@
 {
 	"name": "cuppa",
-	"displayName": "cuppa",
-	"description": "",
-	"version": "0.0.1",
+	"version": "1.0.0",
+	"publisher": "AlDuncanson",
 	"engines": {
 		"vscode": "^1.63.0"
 	},
+	"license": "SEE LICENSE IN LICENSE",
+	"displayName": "cuppa",
+	"description": "Oh look at that, it's time for a cuppa!",
 	"categories": [
 		"Other"
 	],
-	"activationEvents": [
-		"*",
-		"onCommand:cuppa.resetCuppa"
+	"keywords": [
+		"cuppa",
+		"reminders",
+		"notifications"
 	],
+	"galleryBanner": {
+		"color": "#000000",
+		"theme": "dark"
+	},
+	"preview": false,
 	"main": "./dist/extension.js",
 	"contributes": {
 		"commands": [
@@ -38,6 +46,31 @@
 			}
 		}
 	},
+	"activationEvents": [
+		"*",
+		"onCommand:cuppa.resetCuppa"
+	],
+	"badges": [
+		{
+			"url": "https://img.shields.io/github/sponsors/alDuncanson",
+			"href": "https://github.com/sponsors/alDuncanson",
+			"description": "Github Sponsors"
+		},
+		{
+			"url": "https://img.shields.io/github/stars/alDuncanson/cuppa",
+			"href": "https://github.com/alDuncanson",
+			"description": "Stars"
+		},
+		{
+			"url": "https://img.shields.io/visual-studio-marketplace/i/AlDuncanson.cuppa",
+			"href": "https://marketplace.visualstudio.com/items?itemName=AlDuncanson.cuppa",
+			"description": "Installs"
+		}
+	],
+	"qna": "marketplace",
+	"extensionKind": [
+		"ui"
+	],
 	"scripts": {
 		"vscode:prepublish": "npm run package",
 		"compile": "webpack",
@@ -48,6 +81,11 @@
 		"pretest": "npm run compile-tests && npm run compile && npm run lint",
 		"lint": "eslint src --ext ts",
 		"test": "node ./out/test/runTest.js"
+	},
+	"icon": "images/logo/cuppa_logo_small.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/alDuncanson/cuppa"
 	},
 	"devDependencies": {
 		"@types/vscode": "^1.63.0",
