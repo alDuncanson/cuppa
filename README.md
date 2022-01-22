@@ -114,10 +114,11 @@ Or type `⌘⇧P` (`⌃⇧P` on Windows) to open **Command Palette** and type `P
   - custom reminder message
 - [x] command palette commands
   - reset cuppa reminder
+- [ ] configure the trigger time for the 'warning' state from the default 10s to any value
 - [ ] custom side bar panel
 - [ ] setup Github discussions
 
-See the [open issues](https://github.com/alDuncanson/cuppa/issues) for a full list of proposed features (and known issues).
+See requested features and ideas in [cuppa Discussions](https://github.com/alDuncanson/cuppa/discussions/categories/ideas)!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
