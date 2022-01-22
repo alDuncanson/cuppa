@@ -67,7 +67,7 @@
 			"description": "Installs"
 		}
 	],
-	"qna": "marketplace",
+	"qna": "https://github.com/alDuncanson/cuppa/discussions",
 	"extensionKind": [
 		"ui"
 	],
