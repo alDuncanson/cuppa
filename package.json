@@ -42,6 +42,11 @@
 					"type": "string",
 					"default": "Time for a cuppa!",
 					"description": "The reminder message to display"
+				},
+				"cuppa.warningTime": {
+					"type": "number",
+					"default": 30,
+					"description": "How long before cuppa turns yellow to let you know your reminder time is coming up (in seconds)"
 				}
 			}
 		}

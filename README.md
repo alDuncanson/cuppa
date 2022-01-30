@@ -19,14 +19,20 @@
 </div>
 
 <div align="center">
+	<a href="https://github.com/alDuncanson/cuppa/issues">
+    <img src="https://img.shields.io/github/issues/alDuncanson/cuppa">
+  </a>
+	<a href="https://github.com/alDuncanson/cuppa/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/alDuncanson/cuppa">
+  </a>
+	<a href="https://marketplace.visualstudio.com/items?itemName=AlDuncanson.cuppa">
+		<img src="https://img.shields.io/visual-studio-marketplace/i/AlDuncanson.cuppa">
+	</a>
 	<a href="https://github.com/alDuncanson/cuppa">
     <img src="https://img.shields.io/github/stars/alDuncanson/cuppa">
   </a>
 	<a href="https://github.com/sponsors/alDuncanson">
 		<img src="https://img.shields.io/github/sponsors/alDuncanson">
-	</a>
-	<a href="https://marketplace.visualstudio.com/items?itemName=AlDuncanson.cuppa">
-		<img src="https://img.shields.io/visual-studio-marketplace/i/AlDuncanson.cuppa">
 	</a>
 </div>
 
@@ -99,11 +105,11 @@ cuppa is configurable!
 
 You can edit cuppa's time and message with the following configuration keys in your `User/settings.json` file
 
-![configuration](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/settings/json.png)
+![settings json](/images/settings/json.png)
 
 Or type `⌘⇧P` (`⌃⇧P` on Windows) to open **Command Palette** and type `Preferences: Open Settings (UI)`, then search for `cuppa`
 
-![settings ui](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/settings/ui.png)
+![settings ui](/images/settings/ui.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -114,9 +120,9 @@ Or type `⌘⇧P` (`⌃⇧P` on Windows) to open **Command Palette** and type `P
   - custom reminder message
 - [x] command palette commands
   - reset cuppa reminder
-- [ ] configure the trigger time for the 'warning' state from the default 10s to any value
+- [x] configure the trigger time for the 'warning' state from the default 10s to any value
+- [x] setup Github discussions
 - [ ] custom side bar panel
-- [ ] setup Github discussions
 
 See requested features and ideas in [cuppa Discussions](https://github.com/alDuncanson/cuppa/discussions/categories/ideas)!
 
@@ -161,5 +167,6 @@ Al Duncanson
 
 - [Choose an Open Source License](https://choosealicense.com)
 - [Project badges](https://shields.io)
+- [Code screenshots](https://ray.so/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
