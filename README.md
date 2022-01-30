@@ -1,8 +1,5 @@
 <div id="top"></div>
 
-<!-- TODO shields -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
 <br />
 <div align="center">
   <a href="https://github.com/alDuncanson/cuppa">
@@ -105,11 +102,11 @@ cuppa is configurable!
 
 You can edit cuppa's time and message with the following configuration keys in your `User/settings.json` file
 
-![settings json](/images/settings/json.png)
+![settings json](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/settings/json.png)
 
 Or type `⌘⇧P` (`⌃⇧P` on Windows) to open **Command Palette** and type `Preferences: Open Settings (UI)`, then search for `cuppa`
 
-![settings ui](/images/settings/ui.png)
+![settings ui](https://raw.githubusercontent.com/alDuncanson/cuppa/main/images/settings/ui.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
