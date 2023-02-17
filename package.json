@@ -47,13 +47,17 @@
 					"type": "number",
 					"default": 30,
 					"description": "How long before cuppa turns yellow to let you know your reminder time is coming up (in seconds)"
+				},
+				"cuppa.emoji": {
+					"type": "string",
+					"default": "🍵",
+					"description": "The emoji to display in the status bar"
 				}
 			}
 		}
 	},
 	"activationEvents": [
-		"*",
-		"onCommand:cuppa.resetCuppa"
+		"*"
 	],
 	"badges": [
 		{

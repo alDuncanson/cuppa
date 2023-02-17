@@ -6,6 +6,7 @@ let initialReminderDuration: number;
 let reminderDuration: number; // milliseconds
 let reminderText: string;
 let warningDuration: number; // seconds
+let cuppaEmoji: string;
 
 /**
  * Run when cuppa's activation event has triggered the extension
@@ -15,7 +16,7 @@ let warningDuration: number; // seconds
 export function activate({ subscriptions }: vscode.ExtensionContext): void {
 
 	// get workspace configuration values
-	let { reminderMessage, reminderTime, warningTime } = vscode.workspace.getConfiguration('cuppa');
+	let { reminderMessage, reminderTime, warningTime, emoji } = vscode.workspace.getConfiguration('cuppa');
 
 	// listen for configuration changes and update local variables when they do
 	vscode.workspace.onDidChangeConfiguration(() => {
@@ -23,6 +24,7 @@ export function activate({ subscriptions }: vscode.ExtensionContext): void {
 		reminderText = updatedConfiguration.reminderMessage;
 		initialReminderDuration = minutesToMilliseconds(updatedConfiguration.reminderTime);
 		warningDuration = updatedConfiguration.warningTime;
+		cuppaEmoji = updatedConfiguration.emoji;
 	});
 
 	initialReminderDuration = minutesToMilliseconds(reminderTime); // set initial reminder duration to the value in the config, converted to milliseconds
@@ -30,6 +32,7 @@ export function activate({ subscriptions }: vscode.ExtensionContext): void {
 	reminderText = reminderMessage; // set reminder text to the value in the config
 	warningDuration = warningTime; // set warning duration to the value in the config
 	timesUp = false; // flag to indicate if the timer has run out
+	cuppaEmoji = emoji; // set cuppa emoji to the value in the config
 
 	// register a command that is invoked when the status bar item is selected
 	const myCommandId = 'cuppa.resetCuppa';
@@ -110,7 +113,7 @@ export function formattedTime(time: number): string {
  * @param time Time in milliseconds
  */
 export function updateStatus(time: number): void {
-	statusBarItem.text = `🍵   ${formattedTime(time)}`;
+	statusBarItem.text = `${cuppaEmoji}   ${formattedTime(time)}`;
 }
 
 /**
