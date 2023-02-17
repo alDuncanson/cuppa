@@ -1,6 +1,6 @@
 {
 	"name": "cuppa",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"publisher": "AlDuncanson",
 	"engines": {
 		"vscode": "^1.63.0"
